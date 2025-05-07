@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Fight Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>Turtle Fight Game</h1>
+            <div class="form-group">
+                <input type="text" id="player-name" placeholder="Enter your name" maxlength="15">
+                <select id="turtle-color">
+                    <option value="red">Red Turtle</option>
+                    <option value="blue">Blue Turtle</option>
+                    <option value="green">Green Turtle</option>
+                    <option value="purple">Purple Turtle</option>
+                </select>
+                <button id="start-game">Start Game</button>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-ui">
+            <div id="health-bar"></div>
+            <div id="score"></div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html> 
